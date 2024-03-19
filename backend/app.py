@@ -2,12 +2,13 @@ from flask import Flask, request, jsonify, send_from_directory
 from werkzeug.utils import secure_filename
 import requests
 import os
+from config import API_USER_TOKEN
 
 app = Flask(__name__)
 
 UPLOAD_FOLDER = 'uploads'
 ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg'}
-API_USER_TOKEN = 'b54ec4d2d97847c75fd4e349d74efac8ef2ad752'
+API = API_USER_TOKEN
 
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
