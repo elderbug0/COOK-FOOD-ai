@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 UPLOAD_FOLDER = 'uploads'
 ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg'}
-API = API_USER_TOKEN
+API_USER_TOKEN = API_USER_TOKEN
 
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
